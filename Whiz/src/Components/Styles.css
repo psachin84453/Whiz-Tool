@@ -1,0 +1,284 @@
+/* CSS for the page buttons */
+/* body {
+  padding: 10px;
+} */
+
+/* Styles for the canvas */
+canvas {
+  border: 2px solid #d2d1d1;
+  background-color: #ffffff;
+}
+
+/* Styles for the page button container */
+.page-button-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+  /* gap: 1rem; Adjust the spacing between buttons */
+}
+
+/* Styles for individual page buttons */
+.page-button {
+  min-width: auto;
+  padding: 2px;
+  cursor: pointer;
+  border: 2px solid #b1b1b1;
+  background: #f0f0f0 0% 0% no-repeat padding-box;
+  padding: 1rem 0.625rem;
+  font: normal normal 600 18px/24px Segoe UI;
+  color: #000;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  background: #ffffff;
+}
+
+/* Styles for the active page button */
+.page-button.active {
+  color: #ffeeee;
+  background: #ab0717;
+  /* Add other styles for the active state here */
+}
+
+/* Styles for canvas elements */
+#myCanvas,
+#myCanvas1 {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+}
+
+.reportUIAlignmentPageTitle {
+  font: normal normal 600 16px/20px Segoe UI;
+}
+
+/* Styles for button containers */
+.button-container {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Styles for alignment suggestions */
+.alignment-suggestion {
+  list-style-type: none;
+  /* Remove default bullet points */
+  font-size: 15px;
+  padding: 5px;
+  /* Add some padding for spacing */
+
+  width: 30vp;
+
+  display: flex;
+  text-align: left;
+  padding-right: 0px;
+}
+
+fieldset {
+  width: 500px;
+  margin-left: 20px;
+}
+
+/* Styles for alignment suggestion bullets */
+.alignment-suggestion:before {
+  content: "\25A0";
+  /* Unicode for a black square */
+  margin-right: 10px;
+  /* Add spacing between square and text */
+  font-size: 10px;
+  /* Adjust square size */
+}
+
+/* Styles for div tables */
+.divTable {
+  display: table;
+  background-color: #f0f0f0;
+  border-spacing: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 0px;
+}
+
+/* Styles for div table rows */
+.divRow {
+  display: table-row;
+}
+
+/* Styles for div table cells */
+.divCell {
+  display: table-cell;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* Styles for header row in div tables */
+.headerRow {
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Styles for header cells in div tables */
+.headerCell {
+  padding: 10px;
+}
+
+/* Styles for the Body container */
+.Body {
+  max-width: 70vp;
+  /* Adjust the height as needed */
+  overflow-x: auto;
+  /* Enable vertical scrolling if content overflows */
+  /* Add other styles as needed */
+}
+
+/* Styles for the visual canvas */
+.visualcanvas {
+  display: inline-block;
+  max-width: 30vp;
+}
+
+/* Styles for tables */
+table {
+  border-collapse: collapse;
+  width: 500px;
+  box-sizing: border-box;
+  margin-left: 20px;
+}
+
+/* Styles for table headers */
+th {
+  background-color: #e6dfdf;
+  text-align: left;
+  padding: 8px;
+}
+
+/* Styles for h2 elements */
+h2 {
+  margin-left: 20px;
+  margin-top: 0px;
+  width: auto;
+}
+
+/* Styles for table cells */
+td {
+  border: 1px solid #ddd;
+  padding: 6px;
+}
+
+/* Styles for even table rows */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Add some spacing to the paragraph within the "Not Aligned With These" cell */
+td p {
+  margin: 0;
+}
+
+/* Styles for input elements */
+/* Styles for input elements */
+#alignmentPageFilterForm input {
+  width: 360px;
+  padding: 4px 5px;
+  margin: 6px 0 0 0;
+  box-sizing: border-box;
+  font-size: 12px;
+  height: 1.8rem;
+
+
+}
+
+#alignmentPageFilterForm input:focus {
+  box-shadow: 0 0 3px 0 #1183d6;
+  outline: none;
+}
+
+#alignmentPageFilterForm h6 {
+  margin-bottom: 0 !important;
+  width: 380px;
+}
+
+/* Styles for reset filter button */
+
+
+form {
+  gap: 10px;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+/* Styles for tooltips */
+.tooltip {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px;
+  z-index: 999;
+}
+
+/* Styles for hovered visual container */
+.visual-container.hovered {
+
+  margin-left: '15px';
+  /* Customize this border style as needed */
+}
+
+.resetFilter {
+  height: 29px;
+  padding: 0.3rem 1rem;
+}
+/* Styles for individual page buttons */
+.page-button {
+  min-width: auto;
+  padding: 1rem 0.625rem;
+  cursor: pointer;
+  border: 2px solid #b1b1b1;
+  background: #f0f0f0;
+  font: 600 18px/24px Segoe UI; /* Simplified font shorthand */
+  color: #000;
+  text-align: left;
+  display: inline-flex; /* Changed from flex to inline-flex */
+  align-items: center; /* Align text and icon vertically */
+  justify-content: center; /* Align text and icon horizontally */
+}
+
+/* Styles for the active page button */
+.page-button.active {
+  color: #ffffff; /* Changed text color to white */
+  background: #ab0717;
+  /* Add other styles for the active state here */
+}
+/* Container styles */
+.container {
+  display: flex;
+  max-width: 80px; /* Adjust the maximum width */
+  margin: 0 auto; /* Center the container */
+}
+/* Button styles */
+.whizButton2 {
+
+  margin: 5px; /* Add some margin for spacing between buttons */
+  background-color: #007bff; /* Blue background */
+  color: #fff; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 5px 10px; /* Padding */
+  cursor: pointer;
+  max-width: max-content;
+  max-height: 30px; /* Adjust the maximum height */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.whizButton2:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Container styles */
+.allPageInARow {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping to multiple lines */
+}
